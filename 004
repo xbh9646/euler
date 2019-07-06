@@ -1,0 +1,12 @@
+a=range(100,1000)
+b=range(100,1000)
+a.reverse()
+b.reverse()
+f=[]
+for i in range(1,900):
+    for j in range(1,900):
+        c=str(a[i]*b[j])
+        d=c[::-1]
+        if c==d:
+            f.append(int(c))
+print(max(f))
